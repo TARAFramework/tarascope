@@ -1,4 +1,5 @@
-# TaraScope
+# TaraScope [(taraframework.github.io/tarascope/)](https://taraframework.github.io/tarascope/)
+
 
 ![TaraScope](images/RaftScope.png)
 
