@@ -1,0 +1,50 @@
+{
+  "name": "runway-browser",
+  "version": "0.1.0",
+  "description": "Interactively explore models of distributed systems",
+  "dependencies": {
+    "babel-standalone": "^1.0.0",
+    "bootstrap": "^3.3.5",
+    "colorbrewer": "^1.0.0",
+    "d3": "^3.5.16",
+    "jquery": "^3.0.0",
+    "language-runway": "git://github.com/salesforce/language-runway",
+    "lodash": "^4.2.1",
+    "performance-now": "^0.2.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "runway-compiler": "git://github.com/salesforce/runway-compiler",
+    "solarized-light-syntax": "git://github.com/atom/solarized-light-syntax#v1.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-react": "^6.3.13",
+    "bootstrap-webpack": "0.0.5",
+    "css-loader": "^0.23.0",
+    "exports-loader": "^0.6.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.3",
+    "mocha": "^2.3.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2"
+  },
+  "scripts": {
+    "postinstall": "npm ls --prod --json > dist/deps.json && npm run webpack",
+    "webpack": "./node_modules/.bin/webpack",
+    "start": "nws -d ./dist -p ${PORT:-8080}",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salesforce/runway-browser.git"
+  },
+  "author": "Diego Ongaro <dongaro@salesforce.com>",
+  "license": "MIT"
+}
