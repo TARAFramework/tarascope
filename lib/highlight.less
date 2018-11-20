@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2015-2016, Salesforce.com, Inc.
+ * All rights reserved.
+ * Licensed under the MIT license.
+ * For full license text, see LICENSE.md file in the repo root or
+ * https://opensource.org/licenses/MIT
+ */
+
+@import "~solarized-light-syntax/styles/syntax-variables";
+@import "~solarized-light-syntax/styles/editor";
+
+.editor {
+  &:extend(atom-text-editor all);
+}
+
+.editor {
+  @import "~solarized-light-syntax/styles/languages/_base";
+}
