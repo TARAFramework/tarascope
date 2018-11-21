@@ -1,0 +1,29 @@
+[
+  {
+    "name": "runway-model-tara",
+    "version": "0.1.0",
+    "description": "TARA Model for Runway",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/TARAFramework/runway-model-tara.git"
+    },
+    "keywords": [
+      "runway"
+    ],
+    "author": [
+      "Diego Ongaro <ongardie@gmail.com>",
+      "Ganesh Prasad Kumble <sucodesurfer@gmail.com>"
+    ],
+    "license": "MIT",
+    "models": [
+      {
+        "id": "raft",
+        "name": "TARA",
+        "spec": "raft.model",
+        "view": "raft.js",
+        "clock": "ms",
+        "speed": 50
+      }
+    ]
+  }
+]
