@@ -3,7 +3,7 @@ node_js:
   - node
 sudo: false
 
-before_script:
+script:
   - npm install -g nws
   - npm install
   # - nws -d dist -o
