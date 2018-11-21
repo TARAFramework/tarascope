@@ -1,13 +1,3 @@
-language: node_js
-node_js:
-  - node
-sudo: false
-
-script:
-  - npm install -g nws
-  - npm install
-  # - nws -d dist -o
-
 deploy:
   provider: pages
   skip-cleanup: true
